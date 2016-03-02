@@ -1,0 +1,27 @@
+section.explore
+	height: 100vh
+	flex-direction: row
+	padding-top: 100px
+	background:
+		image: url(/assets/img/pens.png)
+		size: cover
+		repeat: no-repeat
+	color: black
+	text-align: center
+
+	h1
+		font-size: 35px
+
+	.photoshop
+		width: 50%
+		height: 100%
+		position: relative
+
+		img
+			position: absolute
+			bottom: 10%
+			left: -10%
+			height: 60%
+			padding: 0
+			margin: 0
+			@include box_shadow(3)

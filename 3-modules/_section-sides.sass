@@ -1,0 +1,64 @@
+section.sides
+  height: 100vh
+  flex-direction: row
+  margin-top: -7px
+
+
+  .left-half
+    flex: 1
+    flex-direction: column
+    background:
+      color: $primary-color
+      image: url(/assets/img/evan-small-blue.png)
+      size: contain
+      repeat: no-repeat
+      position: center
+
+  .right-half
+    flex: 1
+    flex-direction: column
+    @include box_shadow(4)
+
+    .top
+      background:
+        image: url(/assets/img/contact.jpg)
+        size: cover
+        repeat: no-repeat
+      text-align: center
+
+    .bottom
+      display: flex
+      flex-direction: row
+
+    .side-left
+      align-items: center
+      justify-content: center
+      background:
+        image:  url(/assets/img/linkedin-logo.png), url(/assets/img/linkedin-back.jpg)
+        position: center, center
+        size: 35%, cover
+        repeat: no-repeat, no-repeat
+
+
+    .side-center
+      align-items: center
+      justify-content: center
+      background:
+        image:  url(/assets/img/github.png), url(/assets/img/github.jpg)
+        position: center, center
+        size: 35%, cover
+        repeat: no-repeat, no-repeat
+
+    .side-right
+      align-items: center
+      justify-content: center
+      background:
+        image:  url(/assets/img/behance-logo-white.png), url(/assets/img/behance.png)
+        position: center, center
+        size: 40%, cover
+        repeat: no-repeat, no-repeat
+
+    h2
+      font-size: 100px
+      padding: 0
+      margin: 0
